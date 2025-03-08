@@ -5,19 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 현재 워킹디렉토리에서 파일 목록 보기 (윈도우)
-        run:
+        run: |
             uname -a
             node -v
+             python --version
+             
+  show-working-win:
     runs-on: windows-latest
-       steps:
+       steps: 
          - name : 윈도우 파워쉘에서 실행
-           run:
+           run: |
              Get-Computerinfo
-
-    runs-on: ubuntu-lastest
-      steps: 
-        - name: 파이썬버전 출력
-          run: 
-            python --version
-            node -v
-
