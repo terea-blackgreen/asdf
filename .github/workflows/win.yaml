@@ -1,0 +1,23 @@
+name: window
+on: [push]
+jobs:
+  show-working-directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 현재 워킹디렉토리에서 파일 목록 보기 (윈도우)
+        run:
+            uname -a
+            node -v
+    runs-on: windows-latest
+       steps:
+         - name : 윈도우 파워쉘에서 실행
+           run:
+             Get-Computerinfo
+
+    runs-on: ubuntu-lastest
+      steps: 
+        - name: 파이썬버전 출력
+          run: 
+            python --version
+            node -v
+
